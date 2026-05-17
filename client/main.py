@@ -3,7 +3,7 @@ import requests
 # 1. Definimos o endereço (URL) onde o servidor vai rodar
 # O FastAPI por padrão roda no endereço http://127.0.0.1:8000
 # E a rota que vai listar os golpes será a '/golpes'
-URL_DA_API = "http://127.0.0.1:8000/golpes"
+URL_DA_API = "http://127.0.0.1:8000/"
 
 def buscar_e_mostrar_golpes():
     print("=== ACESSANDO O CATÁLOGO DE GOLPES DE JUDÔ ===")
