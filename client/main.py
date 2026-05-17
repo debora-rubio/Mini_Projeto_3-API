@@ -1,6 +1,6 @@
 import requests
 
-# 1. Definimos o endereço (URL) onde o servidor do seu parceiro vai rodar
+# 1. Definimos o endereço (URL) onde o servidor vai rodar
 # O FastAPI por padrão roda no endereço http://127.0.0.1:8000
 # E a rota que vai listar os golpes será a '/golpes'
 URL_DA_API = "http://127.0.0.1:8000/golpes"
