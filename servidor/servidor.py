@@ -6,25 +6,11 @@
 #       ♦ Define rotas e respostas
 #   • py -m pip install uvicorn --> Servidor que executa a API e mostra no navegador
 
-from fastapi import FastAPI # FastAPI --> Classe da biblioteca fastapi que cria uma aplicação web (ou seja, um servidor)
-from fastapi.staticfiles import StaticFiles
-#   • staticfiles --> Submódulo que cuida de arquivos estáticos (.jpg, .mp4 etc.)
-#   • StaticFiles --> Ferramenta que libera uma pasta para o navegador acessar
+from fastapi import FastAPI # Classe da biblioteca fastapi que cria a nossa aplicação
 
-tecnicas = FastAPI() # FastAPI --> Classe da biblioteca fastapi que cria uma aplicação web (ou seja, um servidor)
+tecnicas = FastAPI() 
 
-tecnicas.mount("/qualquer_nome", StaticFiles(directory="imagens"), name="nome_desta_configuração")
-# tecnicas --> A aplicação FastAPI (ou seja, o servidor)
-
-# .mount() --> Significa “conectar” e anexa uma pasta/arquivo ao servidor
-
-# "/qualquer_nome" --> Caminho (URL) no navegador para acessar os arquivos da pasta
-
-# StaticFiles() --> Ferramenta que serve (entrega) arquivos estáticos (.jpg, .mp4 etc.)
-
-# directory="imagens" --> Indica qual pasta do computador será servida
-
-# name="nome_desta_configuração" --> É exatamente isto: o nome dado à configuração
+# A LINHA DO .mount() FOI REMOVIDA DAQUI PORQUE NÃO USAMOS MAIS IMAGENS FÍSICAS!
 
 @tecnicas.get("/")
 def home():
