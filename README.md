@@ -8,6 +8,9 @@ O projeto foi desenvolvido em dupla (Debora Rubio e Paulo Fonseca), seguindo as 
 * **FastAPI**: Framework de alta performance para a criação da API (Backend).
 * **Uvicorn**: Servidor ASGI para executar a aplicação web.
 * **Requests**: Biblioteca HTTP para consumo de dados pelo lado do cliente.
+* **Streamlit**: Biblioteca utilizada para construir a interface web do cliente de forma simples e direta no navegador.
+
+---
 
 ## Estrutura do Projeto
 
@@ -20,7 +23,7 @@ MINI_PROJETO_3-API/
 │   └── servidor.py      # Script do servidor que disponibiliza o JSON e serve as imagens
 ├── venv/                # Ambiente virtual Python
 ├── README.md            # Documentação do projeto
-└── requirements.txt     # Dependências globais do projeto (FastAPI, Uvicorn, Requests)
+└── requirements.txt     # Dependências globais do projeto (FastAPI, Uvicorn, Requests, Streamlit)
 ```
 
 # Como Executar o Projeto
@@ -38,4 +41,4 @@ Para rodar o projeto localmente, certifique-se de que os comandos sejam executad
 
 * Abra um segundo terminal integrado, desta vez na pasta **client/.**
 * Ative o ambiente virtual executando: **..\\venv\\Scripts\\Activate.ps1**
-* Execute o script para consumir os dados do servidor: **py main.py**
+* Execute o script do Streamlit script para abrir a interface no navegador: **streamlit run main.py**
